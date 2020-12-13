@@ -24,7 +24,7 @@ variable "vpn_site_list" {
         }))
     }))
 
-    validation {
+    /*validation {
         condition   = alltrue(
             [
                 for k,v in var.vpn_site_list : 
@@ -47,6 +47,6 @@ variable "vpn_site_list" {
             )
         )
         error_message = "Variable onprem_gateway_address must have an IP address value."
-    }
+    }*/
 
 }
